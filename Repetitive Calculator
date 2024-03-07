@@ -1,0 +1,25 @@
+#JayaKushal24
+print("Welcome to REPITITIVE CALCULATOR")
+def operations(result,num2):
+    if operation=="+":
+        return result+num2
+    elif operation=="*":
+        return result*num2
+    elif operation=="-":
+        return result-num2
+    elif operation=="/":
+        return result/num2
+    else:
+        return "invalid operation"
+
+same=True
+result=float(input('what\'s the first number?\t '))
+while same:
+    operation=input("operation:\n+\n-\n*\n/\nPick any operation:\t")
+    num2=float(input('what\'s the second number?\t'))
+    result=operations(result,num2)
+    print(result)
+    again=input(f"type'y' to continue calculating with '{result}' or 'n' to start a new calculation\n").lower()
+    if again =="n":
+        print(f"The final answer is:\t{result}")
+        same=False
