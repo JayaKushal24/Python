@@ -1,3 +1,4 @@
+#JayaKushal24
 import random
 #for user choices
 userinput=int(input("Enter 0 for Rock (or) 1 for Paaper (or) 2 for Scissors\n"))
