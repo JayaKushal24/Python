@@ -1,0 +1,6 @@
+a="the quick brown fox jumps over the lazy dog"
+a=set(a.replace(" ",""))
+if len(a)==26:
+    print("panagram")
+else:
+    print("not a panagram")
